@@ -1,0 +1,88 @@
+$orange: #f46a0b;
+$blue: #00538b;
+body{
+  background-color: #ecf0f1;
+}
+@mixin orange-border {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid $orange;
+  border-top: 5px solid $orange;
+  color: #404040;
+  line-height: 1.5;
+  padding-bottom:50px;
+}
+@mixin titulo{
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #999;
+}
+
+// Modalidade ------------------------------------
+.modalidadesCards{
+  padding-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.modalidadesCards .card{
+  background-color:#fff;
+  width: 49%;
+}
+.modalidadesCards .card .card__image{
+  max-height: 30vh;
+}
+@media screen and(max-width:768px){
+  .modalidadesCards .card{
+    width: 100%;
+  }
+}
+
+// Galeria ---------------------------------------
+.galeria{
+  @include orange-border;
+  margin-top:110px;
+  h1{
+    @include titulo;
+    margin-bottom:24px;
+  }
+  &__fotos{
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px){
+  .galeria__fotos{
+    flex-direction: column;
+  }
+  .galeria{
+    .foto{
+      width: 100%;
+    }
+  }
+}
+
+@import "reset";
+@import "./album/album";
+@import "../common/HoverIcon/hovericon";
+@import "../common/Navbar/navbar";
+@import "../common/Button/Button";
+@import "../common/Grid/Grid";
+@import "../common/DropDown/DropDown";
+@import "../components/MainImage/MainImage";
+@import "../components/ContactBox/ContactBox";
+@import "../components/ModalidadesSecao/ModalidadesSecao";
+@import "../components/AcademiaFamilia/AcademiaFamilia";
+@import "../components/UltimasNoticias/UltimasNoticias";
+@import "../components/Card/Card";
+@import "../common/WhatsappIcon/WhatsappIcon";
+@import "../components/Cadastrese/Cadastrese";
+@import "../components/QuemSomos/QuemSomos";
+@import "../components/Modalidade/Modalidade";
+@import "../components/Agenda/Agenda";
+@import "../components/Foto/Foto";
+@import "../components/Noticia/Noticia";
+@import "../components/Success/success";
+@import "../common/Footer/footer";

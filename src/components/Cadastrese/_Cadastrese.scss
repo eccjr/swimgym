@@ -1,0 +1,49 @@
+.cadastre-se{
+  width:80%;
+  margin:20px auto 0 auto;
+  @include orange-border;
+  h1{
+    @include titulo;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    input{
+      color: #666;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    margin-bottom:1em;
+  }
+  input,select{
+    height: 38px;
+    width: 100%;
+  }
+  select{
+    color:#404040;
+    background-color: #dedede;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cdcdcd;
+    margin-bottom:1em;
+  }
+  textarea{
+    border:1px solid #cdcdcd;
+  }
+  button{
+    width:28%;
+  }
+  form{
+    margin-top:1.5em;
+    padding:0 4%;
+  }
+}
+@media screen and(max-width:620px){
+  .cadastre-se{
+    width: 100%;
+    h1{text-align: center;}
+    button{
+      width: 100%;
+    }
+  }
+}

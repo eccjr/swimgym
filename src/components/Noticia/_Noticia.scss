@@ -1,0 +1,49 @@
+.noticia{
+  @include orange-border;
+  width: 75%;
+  margin: 90px 0px 30px;
+  &__image{
+    width: 100%;
+    height: 450px;
+  }
+  h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin:0;
+    font-size:28px;
+    &:hover{
+      color:$blue;
+      text-decoration: underline;
+    }
+  }
+  line-height: 27px;
+  h4{
+    font-size:16px;
+    font-weight: 500;
+    margin:0;
+    color:$orange;
+    padding-bottom:20px;
+    text-transform: uppercase;
+  }
+  button{
+    margin-top:24px;
+  }
+  p{
+    padding-top:24px;
+    margin:0;
+    margin-top:24px;
+    border-top:1px dotted rgb(153, 153, 153);;
+  }
+}
+.separaNoticia{
+  width: 100%;
+  height: 1px;
+  background: gray;
+  margin: 20px 0px;
+
+}
+@media screen and (max-width: 766px){
+  .noticia{
+    width: 100%;
+  }
+}

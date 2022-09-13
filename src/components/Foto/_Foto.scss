@@ -1,0 +1,42 @@
+.foto{
+  padding-right: 20px;
+  width:33.3%;
+  text-align: center;
+  position: relative;
+  h2{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: normal;
+    margin: 15px 0 0;
+    padding: 0;
+  }
+  p{margin:8px 0 0;}
+  a{
+    display: block;
+    height: 300px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    .foto__img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.borda-dupla{
+  position: absolute;
+  height: 300px;
+  width: 97%;
+}
+.borda-dupla::after{
+  border-width: 4px !important;
+  bottom: -7px;
+  content: " ";
+  left: -7px;
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  border-style: none none double double !important;
+  border-color: #ccc;
+}

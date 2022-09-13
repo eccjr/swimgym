@@ -1,0 +1,6 @@
+svg {
+  fill: $blue;
+  &:hover {
+    fill: lighten($blue, $amount: 15);
+  }
+}

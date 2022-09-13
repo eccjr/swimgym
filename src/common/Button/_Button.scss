@@ -1,0 +1,13 @@
+.default-button {
+  padding: 1.3em 2em 1.2em;
+  background-color: $orange;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.25s ease-in-out 0s;
+  &:hover {
+    transform: scale(1.1);
+    background-color: $blue;
+  }
+  border: none;
+}

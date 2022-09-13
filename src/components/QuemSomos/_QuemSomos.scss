@@ -1,0 +1,6 @@
+.quem-somos{
+  @include orange-border;
+  margin-top:110px;
+  h1{@include titulo;}
+  img{padding:1.5em 0;}
+}

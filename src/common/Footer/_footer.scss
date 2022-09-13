@@ -1,0 +1,121 @@
+.footer{
+  background-color:  #1e1c1d;
+  color: #fff;
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 5px;
+  line-height: 1.5;
+  width: 100%;
+
+  .footer-padding{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  &__logo{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .aligncenter{
+      margin: 0 auto;
+      display: block;
+    }
+    &__image{
+      width: 185px;
+      //vertical-align: midle;
+    }
+    a{
+      width: 20px;
+    }
+    svg{
+      font-size: 35px;
+      width: 1em;
+      fill: #0b548a;
+  
+      &:hover{
+        fill: #dc6263;
+      }
+    }
+  }
+  &__flex{
+    display: flex;
+
+    &__coluna{
+      width: 33.33%;
+      //padding-right: 20px;
+
+      svg{
+        width: 1em;
+        font-size: 3em;
+        fill: #fff;
+      }
+      .flex{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-bottom: 20px;  
+        a{
+          height: 20px
+        }
+        svg{
+          width: .875em;
+          height: 1em;
+          font-size: 25px;
+        }
+      }
+      h5{
+        font-weight: 100;
+        font-size: 20px;
+        font-family: Roboto Condensed;
+        line-height: 1.1;
+      }
+      &--1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      &--2{
+        margin-bottom:20px;
+      }
+
+      .link-email{
+        color: #3498db;
+        cursor: pointer;
+        word-wrap: break-word;
+        &:hover{
+         text-decoration: underline;
+        }
+       }
+    }
+
+  }
+  &__mapa{
+    border: 0px;
+    height: 500px;
+  }
+  &__info{
+    background-color: #000;
+    margin-top: 40px;
+    font-size: 12px;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #3498db;
+  }
+}
+@media screen and(max-width:767px) {
+  .footer__flex{
+    flex-direction: column;
+    align-items: center;
+
+    &__coluna{
+      width: 100%;
+      .link-email{
+        word-wrap: initial;
+      }
+    }
+  }
+
+}

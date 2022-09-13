@@ -1,0 +1,53 @@
+.contact-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin-top: -14.5rem;
+  margin-bottom: 50px;
+  // position: relative;
+  margin-left: 32%;
+  margin-right: 30%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  text-align: center;
+  svg {
+    height: 50px;
+  }
+  font-size: 22px;
+  p {
+    &:first-child {
+      margin: 0 0 20px 0;
+    }
+    &:nth-child(3) {
+      margin: 20px 0 20px 0;
+    }
+  }
+  color: #404040;
+}
+.contact-box__icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15%;
+}
+@media screen and (max-width: 760px) {
+  .contact-box {
+    margin-top: -9rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 40px;
+    p {
+      &:first-child {
+        margin: 0 0 40px 0;
+      }
+      &:nth-child(3) {
+        margin: 40px 0 40px 0;
+      }
+    }
+  }
+  .contact-box__icons {
+    margin: 0 73px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contact-box__icons{
+    margin:5%;
+  }
+}

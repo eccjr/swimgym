@@ -1,0 +1,10 @@
+.success {
+    @include orange-border;
+    width: 75%;
+    margin: 90px 0px 30px;
+    text-align: center;
+
+    .thanks-message {
+        font-size: 14pt;
+    }
+}
